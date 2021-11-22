@@ -9,8 +9,8 @@ export default function Layout({ children }) {
       >
         <div className="container">
           <div className="mr-auto">
-            <a className="navbar-brand" href="#">
-              Navbar
+            <a className="navbar-brand" href="/">
+              ◀︎ back
             </a>
           </div>
           <form className="d-flex">
