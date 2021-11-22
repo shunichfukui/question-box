@@ -23,6 +23,14 @@ export default function Home() {
           <a>Go to page2</a>
         </Link>
 
+        <Link href="/questions/received">
+          <a>質問一覧</a>
+        </Link>
+
+        <Link href="/users/[user.uid]">
+          <a>質問する</a>
+        </Link>
+
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
