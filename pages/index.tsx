@@ -27,7 +27,7 @@ export default function Home() {
           <a>質問一覧</a>
         </Link>
 
-        <Link href="/users/[user.uid]">
+        <Link href={`/users/${user?.uid}`}>
           <a>質問する</a>
         </Link>
 
