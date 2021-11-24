@@ -85,8 +85,12 @@ export default function QuestionsShow() {
   }
 
   useEffect(() => {
+    if (user === null) {
+      return
+    }
+
     loadData()
-  }, [routerQuery.id])
+  }, [routerQuery.id, user])
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
