@@ -110,8 +110,14 @@ export default function QuestionsShow() {
         isReplied: true,
       })
     })
-    setBody('')
-  }
+    const now = new Date().getTime()
+    setAnswer({
+      id: answerRef.id,
+      uid: user.uid,
+      questionId: question.id,
+      body,
+      createdAt: new Timestamp(now / 1000, now % 1000),
+    })
 
   return (
     <Layout>
