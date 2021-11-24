@@ -118,7 +118,7 @@ export default function QuestionsShow() {
       body,
       createdAt: new Timestamp(now / 1000, now % 1000),
     })
-
+  }
   return (
     <Layout>
       <div className="col-12 col-md-6">
