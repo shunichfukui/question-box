@@ -4,6 +4,7 @@ import Layout from '../../components/Layout'
 import { useAuthentication } from '../../hooks/authentication'
 import { FormEvent, useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
+import Link from 'next/link'
 
 import {
   addDoc,
@@ -103,6 +104,15 @@ export default function UserShow() {
                 <button type="submit" className="btn btn-primary">
                   質問を送信する
                 </button>
+              )}
+            </div>
+            <div>
+              {user && (
+                <p>
+                  <Link href="/users/me">
+                    <a className="btn btn-link">自分もみんなに質問してもらおう！</a>
+                  </Link>
+                </p>
               )}
             </div>
           </form>
