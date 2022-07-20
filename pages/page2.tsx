@@ -14,7 +14,7 @@ export default function Home() {
 
       <p>{user?.uid || '未ログイン'}</p>
       <Link href="/">
-        <a>Go back</a>
+        Go back
       </Link>
     </div>
   )

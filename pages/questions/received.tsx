@@ -116,16 +116,14 @@ export default function QuestionsReceived() {
         <div className="col-12 col-md-6" ref={scrollContainerRef}>
           {questions.map((question) => (
             <Link href={`/questions/${question.id}`} key={question.id}>
-              <a>
-                <div className="card my-3">
-                  <div className="card-body">
-                    <div className="text-truncate">{question.body}</div>
-                    <div className="text-muted text-end">
-                      <small>{dayjs(question.createdAt.toDate()).format('YYYY/MM/DD HH:mm')}</small>
-                    </div>
+              <div className="card my-3">
+                <div className="card-body">
+                  <div className="text-truncate">{question.body}</div>
+                  <div className="text-muted text-end">
+                    <small>{dayjs(question.createdAt.toDate()).format('YYYY/MM/DD HH:mm')}</small>
                   </div>
                 </div>
-              </a>
+              </div>
             </Link>
           ))}
         </div>

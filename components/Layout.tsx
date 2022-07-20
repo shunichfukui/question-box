@@ -62,14 +62,10 @@ export default function Layout({ children }) {
           <div className="d-flex justify-content-between align-items-center w-100">
             <i className="material-icons">menu</i>
             <Link href="/questions/received">
-              <a>
-                <i className="material-icons">home</i>
-              </a>
+              <i className="material-icons">home</i>
             </Link>
             <Link href="/users/me">
-              <a>
-                <i className="material-icons">person</i>
-              </a>
+              <i className="material-icons">person</i>
             </Link>
           </div>
         </div>

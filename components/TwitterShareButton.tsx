@@ -9,7 +9,7 @@ export default function TwitterShareButton(props: Props) {
   )}&text=${encodeURIComponent(props.text)}&hashtags=MyQuestionService`
 
   return (
-    <a href={url} className="twitter-share-button" target="_blank">
+    <a href={url} className="twitter-share-button" target="_blank" rel="noreferrer">
       <img src="/images/Twitter_Logo_WhiteOnBlue.svg" width="24" height="24" />
       <span>シェア</span>
     </a>
