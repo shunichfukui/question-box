@@ -24,12 +24,12 @@ type Query = {
 
 export default function QuestionsShow() {
   const router = useRouter()
-  const routerQuery = router.query as Query
-  const { user } = useAuthentication()
-  const [question, setQuestion] = useState<Question>(null)
-  const [body, setBody] = useState('')
-  const [isSending, setIsSending] = useState(false)
-  const [answer, setAnswer] = useState<Answer>(null)
+  const routerQuery = router.query as Query;
+  const { user } = useAuthentication();
+  const [question, setQuestion] = useState<Question>(null);
+  const [body, setBody] = useState('');
+  const [isSending, setIsSending] = useState(false);
+  const [answer, setAnswer] = useState<Answer>(null);
 
 
   function getCollections() {
@@ -118,7 +118,7 @@ export default function QuestionsShow() {
       body,
       createdAt: new Timestamp(now / 1000, now % 1000),
     })
-
+  }
   return (
     <Layout>
       <div className="col-12 col-md-6">
